@@ -24,7 +24,7 @@ return (NULL);
 }
 for (i = 0; i <= len; i++)
 {
-arr[i] = min++
+arr[i] = min++;
 }
-return (*arr);
+return (arr);
 }
