@@ -13,10 +13,17 @@ int sum_them_all(const unsigned int n, ...)
 	va_list parg;
 	unsigned int sum = 0, index;
 
-	va_start(parg, n);
-	for (index = 0; index < n; index++)
+	if (n == 0)
 	{
-		sum += va_arg(parg, int);
+		return (0);
 	}
-	return (sum);
+	else
+	{
+		va_start(parg, n);
+		for (index = 0; index < n; index++)
+		{
+			sum += va_arg(parg, int);
+		}
+		return (sum);
+	}
 }
