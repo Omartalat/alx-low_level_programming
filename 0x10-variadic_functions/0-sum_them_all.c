@@ -10,15 +10,13 @@
  **/
 int sum_them_all(const unsigned int n, ...)
 {
-	var_list parg;
+	va_list parg;
 	unsigned int sum = 0, index;
 
-	var_start(parg, n);
-	unsigned int value = var_arg(parg, unsigned int);
-
+	va_start(parg, n);
 	for (index = 0; index < n; index++)
 	{
-		sum += value;
+		sum += va_arg(parg, int);
 	}
 	return (sum);
 }
