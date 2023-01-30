@@ -4,7 +4,7 @@
  ** @head: A pointer to head of the list
  ** @n: integer to store in a node
  **
- ** Return: Always 0.
+ ** Return: node.
  **/
 listint_t *add_nodeint(listint_t **head, const int n)
 {
