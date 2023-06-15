@@ -1,5 +1,6 @@
 #include "lists.h"
-/*
+
+/**
  * print_dlistint - print te content of a dlistint_t list
  * @h: pointer to the head.
  *
